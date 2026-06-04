@@ -1,5 +1,5 @@
 {% set name = "cccl-python" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 {% if cuda_compiler_version in (None, "None", True, False) %}
 {% set cuda_major_version = 0 %}
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://github.com/NVIDIA/cccl/archive/refs/tags/python-{{ version }}.tar.gz
-  sha256: 4782d7c6c4dd86eee50c97a6034ecd26853020f5435efd88162a39fc5d1ac75b
+  sha256: eab28b87470d6f052918b264030df4c01689bf05090f58dcbad25471939252c9
   patches:
     - 0001-Include-memory-in-for_op_helper.h.patch
 
